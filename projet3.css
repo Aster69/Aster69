@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+	background-position:center;
+    background-color: #0d0a27;
+    font-family:'Roboto', sans-serif;
+	}
+.navbar{
+    align-items: center;
+    font-size: 30px; 
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    padding-left: 650px;
+	margin-top:-130px;
+}
+nav ul li{
+     display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+    background: #36b5ff;
+    box-shadow: 0 0 10px #36b5ff, 0 0 40px #49e8f3, 0 0 80px #1b4a70;
+    box-sizing: content-box;  
+    width: 200px;
+    height: 50px;
+    padding: 10px;  
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  html {
+    scroll-behavior: smooth;
+  }
+  footer .wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px ;
+}
+footer .wave.wave1{
+    animation: animate 30s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    25%
+    {
+        background-position-x: 500px;
+    }
+   50%
+    {
+        background-position-x: 750px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+}
+}
+.ommi{
+    width: 150px;
+    padding-left: 50%;
+    padding-top: 200px;
+    position: absolute;
+}
+
+table{
+    color: white;
+    padding-left: 30%;
+    padding-top: 200px;
+}
+footer{
+    padding-top: 20%;
+}
+
+.ommi{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.ommi:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
